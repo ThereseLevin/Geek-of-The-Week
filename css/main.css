@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Khand|Press+Start+2P|Roboto+Mono');
+
+/* ------- Grid master ------- */
+
+.grid-master {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    min-height: 100vh; /* För att tycka ner footer */
+}
+
+/* ------- Navigation ------- */
+
+.nav-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color:rgba(145, 188, 223, 0.8);
+}
+
+.nav-top ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-top ul li {
+    display:inline;
+}
+
+.nav-top ul li a {
+    display: none;
+    text-decoration: none;
+    color: white;
+    padding: 1.5em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nav-top.drop ul li a {
+    display:block;
+}
+
+.nav-top ul li a:hover {
+    color: #d84747;
+}
+
+.nav-top.drop #hamburger-menu, #ham-menu {
+    position: absolute;
+    right: 0.2em;
+    top: 0.5em;
+    width: 3em;
+}
+
+/* ------- Footer -------*/
+
+footer {
+    position: relative; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("../images/grass2.svg");
+    height: auto;
+}
+
+footer img {
+    max-width: 10vw;
+    max-height: 8vh;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    width: 70%;
+    grid-gap: 2em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.grid-footer div{
+    display: flex;
+    justify-content: center;
+}

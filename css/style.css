@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Khand|Press+Start+2P|Roboto+Mono');
+
+/* ---------- HTML element --------- */
+
+body {
+    background-image: url("../images/clouds.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:rgba(145, 188, 223);
+}
+
+h1 {
+    font-family: bangers;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2, .blinking  {
+    text-align: center;
+    color: #d84747;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h3 {
+    font-family: 'Roboto Mono', Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+q {
+    font-family: 'Khand', monospace;
+    font-size: 1em;
+}
+
+p {
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.8em;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin-top: 4em;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #E59F40;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+input[type=submit]:hover {
+    background-color: orange;
+}
+
+textarea { 
+    resize: vertical; 
+}
+
+/* --------- .CLASS styling --------- */ 
+
+.geek-pic {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.press {
+    text-align: center;
+}
+
+.press a {
+    text-decoration: none;
+}
+
+.grid-content {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 55vh;
+}
+
+.grid-paragraf{
+    text-align:center;
+}
+
+.fact img{
+    width: 70%;
+    
+}
+
+.fact {
+    display:grid;
+    margin:auto;
+    text-align: center;
+    width: 80%;
+}
+
+.fact p {
+    text-align: left;
+}
+
+.geek-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 3em;
+}
+
+.beak-img {
+    margin: auto;
+    width: 80%;
+}
+
+.congrats-text {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.congrats-text p {
+    text-align: left;
+}
+
+.material-icons {
+    padding-left: 0.5em;
+}
+
+.border {
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    border: rgba(145, 188, 223, 0.8) solid 6px;
+    padding: 1em;
+}
+
+.sharing-text {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.sharing-text h2 {
+    transform: translateX(3%);
+}
+
+.share p{
+    text-align: center;
+}
+
+.share img {
+    width: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.heading {
+    width: 70%;
+    margin: auto;
+}
+
+/* Animation */
+
+.float {
+    margin: auto;
+    width: 4em;
+    position: relative;
+    animation: floatBubble 0.5s infinite; /* floatBubble = namn, sekunder animationen varar, förevigt */
+    animation-direction: alternate; /* gå runt runt alternera i en cirkel */
+}
+
+@keyframes floatBubble{
+    from {
+        top:0;
+        animation-timing-function: ease-in;
+        }
+
+    to {
+        top: 2em;
+        animation-timing-function: ease-out;
+    }
+
+}
+
+.blinking {
+    animation: blinkingText 0.9s infinite;
+}
+
+@keyframes blinkingText{
+    0% { color: #f72a2a; }
+    49% { color: transparent; }
+    50% { color: transparent; }
+    100% { color:  #f72a2a; }
+}
+
+
+/* --------- #ID styling --------- */ 
+
+#logotype {
+    margin: auto;
+    width: 70%;
+    margin-top: 4em;
+}
+
+#geekoftheweek {
+    width: 15em;
+    border-radius: 50%;
+}
+
+#source a p {
+    text-align: right;
+    font-size: 0.7em;
+}
+
+#bubble {
+    margin: auto;
+    margin-top: 3em;
+    position: relative;
+    width: 70%;
+    height: auto;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.85);
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    border: rgba(145, 188, 223, 0.8) solid 6px;
+    margin-bottom: 5em;
+}
+
+#bubble:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 19px 23px 0;
+    border-color: rgba(255, 255, 255, 0.85) transparent;
+    display: block;
+    width: 0;
+    bottom: -19px;
+    left: 131px;
+}
+
+#bubble:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 24px 28px 0;
+    border-color: rgba(145, 188, 223, 0.8) transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    bottom: -30px;
+    left: 126px;
+}
+
+#first-logo {
+    width: 3em;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+#hamburger-menu {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right: 0.2em;
+    top: 0.5em;
+}
+
+
+/* ----------- Media queries ---------- */
+
+
+@media screen and (min-width: 500px) {
+    #logotype {
+        width: 50%;
+    }
+
+    #bubble {
+        max-width: 50%;
+    }
+
+    .fact {
+        width: 70%;
+        grid-gap: 5em;
+    }
+
+    .congrats-text {
+        width: 70%;
+    }
+
+    .geek-form {
+        width: 70%;
+    }
+
+    .sharing-text {
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    .nav-top ul li a {
+        display:inline-block;
+    }
+
+    .nav-top {
+        background-color: transparent;
+    }
+
+    #logotype {
+        width: 40vh;
+    }
+
+    #bubble {
+        max-width: 30%;
+    }
+    
+    .grid-footer {
+        width: 50%;
+    }
+    
+    #first-logo {
+        width: 8%;
+    }
+
+    .fact {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        width: 90%;
+    }
+
+    #source {
+        grid-column-start: 3;
+    }
+
+    .beak-img {
+        width: 20%;
+    }
+
+    .congrats-text {
+        width: 50%;
+    }
+
+    .geek-form {
+        width: 50%;
+    }
+
+    .sharing-text {
+        width: 40%;
+    }
+   
+ }
+
+@media screen and (min-width: 1300px) {
+
+    .congrats-text {
+        width: 30%;
+    }
+
+    .geek-form {
+        width: 30%;
+    }
+
+    .fact {
+        grid-gap: 3em;
+        width: 80%;
+    }
+
+    .sharing-text {
+        width: 30%;
+    }
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!--Stylesheets-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Geek of the Week</title>
+</head>
+<body>
+
+	<div class="grid-master">
+		<header>
+			<nav class="nav-top" id="nav-drop">
+				<ul>
+						<li><a href="first.html">Home</a></li>
+						<li><a href="fact.html">Whacked Fact</a></li>
+						<li><a href="geek.html">Geek of the Week</a></li>
+						<li><a href="beak.html">Beak of the Week</a></li>
+						<li>
+							<a href="javascript:void(0)" id="hamburger-menu" onclick="navToggle()">
+								<img src="images/c2da62eb4d4070c.png" alt="hamburger menu" id="ham-menu">
+							</a>
+						</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+
+			<div class="grid-content">
+
+				<div class="float">
+						<img src="images/crown.svg" alt="Pixel art of a crown">
+				</div> <!-- / .float-->
+
+				<div class="geek-pic">
+						<img src="images/tjejen.png" alt="Picture of this weeks geek" id="geekoftheweek">
+				</div> <!-- / .geek-pic-->
+
+				<div class="congrats-text border">
+						<h2>Congrats <em>Siri!</em> </h2>
+						<blockquote>
+							<q>Donkey Kong got the name because Miyamoto thought donkey meant stupid in English.</q>
+						</blockquote>
+						<p>Submit your best Whacked fact and you are in the competition for the crown!</p>
+						<p>The winner gets a shoutout and a very speciel <q>Geek of the Week</q> t-shirt.</p>
+				</div> <!-- / .congrats-text-->
+                
+				<div class="geek-form border">
+					<form action="/action_page.php">
+
+						<input type="text" id="fname" name="firstname" placeholder="Name">
+
+						<input type="text" id="lname" name="lastname" placeholder="Link to source">
+						
+						<textarea>Your Whacked fact</textarea>
+					
+						<input type="submit" value="Submit">
+
+						</form>
+				</div> <!-- / .geek-form-->
+
+			</div> <!-- / .grid-content-->
+				
+		</main>
+
+		<footer>
+			<div class="grid-footer">
+				<div>
+					<a href="https://www.instagram.com/beak_of_theweek/?hl=sv">
+						<img src="images/fb-icon.png" alt="Logotype of Facebook">
+					</a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/beak_of_theweek/?hl=sv">
+						<img src="images/insta.png" alt="Logotype of Instagram">
+					</a>
+				</div>
+				<div>
+					<a href="https://www.instagram.com/beak_of_theweek/?hl=sv">
+						<img src="images/snapchat.png" alt="Logotype of Snapchat">
+					</a>
+				</div>
+			</div> <!-- / .grid-footer-->
+		</footer>
+
+		</div> <!--/ .grid-master-->
+
+		<script>
+		function navToggle() {
+					var x = document.getElementById("nav-drop");
+
+					if (x.className === "nav-top") {
+							x.className += " drop";
+					} else {
+							x.className = "nav-top";
+					}
+			}
+		</script>
+	</body>
+</html>

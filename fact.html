@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!--Stylesheets-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Geek of the Week</title>
+</head>
+	<body>
+		<div class="grid-master">
+			<header>
+				<nav class="nav-top" id="nav-drop">
+					<ul>
+							<li><a href="first.html">Home</a></li>
+							<li><a href="fact.html">Whacked Fact</a></li>
+							<li><a href="geek.html">Geek of the Week</a></li>
+							<li><a href="beak.html">Beak of the Week</a></li>
+							<li>
+								<a href="javascript:void(0)" id="hamburger-menu" onclick="navToggle()">
+									<img src="images/c2da62eb4d4070c.png" alt="hamburger menu" id="ham-menu">
+								</a>
+							</li>
+					</ul>
+				</nav>
+			</header>
+
+			<main>
+				<div class="grid-content">
+					<h2 class="border heading">Whacked fact</h2> 
+
+					<div class="fact">
+						<div>
+							<img src="images/banana.png" alt="picture of banana">
+								<div class="border">
+										<h3>Bananas are curved because they grow towards the sun. </h3>
+										<p>The fruit grows against gravity, which givs the banan its familiar shape.</p>
+								</div>
+								
+					</div>
+						
+					<div>
+						<img src="images/pokeball.svg" alt="picture of a pokeball">
+							<div class="border">
+								<h3>The pokémon Htmonlee and Hitmonchan are based off Bruce Lee and Jackie Chan.</h3>
+								<p>The third Pokemon of the Hitmons is also named after a martial artist. Hitmontop is named after a lesser known martial artist, Larry Top. </p>
+							</div>
+					</div>
+
+					<div>
+						<img src="images/mobile.png" alt="picture of a camera">
+							<div class="border">
+								<h3>In 2017, more people were killed from injuries caused by taking a selfie the by shark attacks.</h3>
+								<p>There was only 5 death caused by shark attacks and 35 deaths caused by taking selfies.</p>
+							</div>
+					</div>
+						
+						<div id="source">
+								<a href="https://www.thefactsite.com/2011/07/top-100-random-funny-facts.html/2">
+									<p>Source</p>
+								</a>
+						</div> <!-- / #source-->
+					</div>
+				</div> <!-- / .grid-content -->
+					
+
+			</main>
+
+			<footer>
+					<div class="grid-footer">
+						<div>
+							<a href="https://www.instagram.com/beak_of_theweek/?hl=sv">
+								<img src="images/fb-icon.png" alt="Logotype of Facebook">
+							</a>
+						</div>
+						<div>
+							<a href="https://www.instagram.com/beak_of_theweek/?hl=sv">
+								<img src="images/insta.png" alt="Logotype of Instagram">
+							</a>
+						</div>
+						<div>
+							<a href="https://www.instagram.com/beak_of_theweek/?hl=sv">
+								<img src="images/snapchat.png" alt="Logotype of Snapchat">
+							</a>
+						</div>
+					</div> <!-- / .grid-footer-->
+			</footer>
+
+		</div> <!-- / .grid-master-->
+
+		<script>
+		function navToggle() {
+					var x = document.getElementById("nav-drop");
+
+					if (x.className === "nav-top") {
+							x.className += " drop";
+					} else {
+							x.className = "nav-top";
+					}
+			}
+		</script>
+	</body>
+</html>
